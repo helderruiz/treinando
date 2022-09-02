@@ -1,0 +1,7 @@
+:root {
+    --cor-azul: rgb(243, 114, 22);
+}
+
+h1 {
+    background-color: var(--cor-azul);
+}
