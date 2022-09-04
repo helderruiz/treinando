@@ -1,7 +1,136 @@
-:root {
-    --cor-azul: rgb(243, 114, 22);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    background-color: var(--cor-azul);
+body {
+    background-color: rgb(174, 174, 174);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/* css menu */
+.menu-hamburger {
+    width: 50px;
+    height: 50px;
+    background-image: url(../imagens/menu.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+    padding-left: 2em;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    /* mudando a position para relative no pai para mudar a posicao da lista coma position absolute */
+    position: relative;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nome {
+    padding: 1em;
+    color: rgb(133, 19, 240);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 30px rgba(4, 0, 35, 0.38);
+}
+
+/* lista menu */
+.lista-menu {
+    display: none;
+    list-style: none;
+    /* mudei a position no pai cabecalho agora estou mudando no filho! asssim libera pra mexer no top e width */
+    position: absolute;
+     top: 100%;/* aqui ja muda para linha de baixo no topo */
+     width: 55vw;
+}
+
+/* click no botão vai abrir e fechar a lista, botao criado com input checkbox */
+.cabecalho-botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.cabecalho-botao {
+    display: none;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1em;
+    background-color: rgb(189, 251, 230);
+    padding-left: 2em;
+}
+
+.lista-menu__titulo {
+    color: orangered;
+    font-weight: bold;
+}
+
+.lista-menu__link {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* css banner */
+.banner {
+    text-align: center;
+    background-image: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    color: white;
+    padding: 2.5em;
+}
+
+.banner-titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.banner-texto {
+    margin: 1.5em 0;
+    font-weight: bold;
+}
+
+.pesquisa {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 1em;
+    width: 100%;
+}
+
+.pesquisa::placeholder {
+    font-size: 14px;
+    text-align: center
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em 0 1.5em 0;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.731);
+}
+
+.rodape {
+    background-image: linear-gradient(97.54deg, #07406c 35.49%, #326589 165.37%);
+    text-align: center;
+    padding: 2em;
+}
+
+.rodape-titulo {
+    color: white;
+    font-size: 22px;
+    margin-top: 1em;
+}
+
+.rodape-nome {
+    color: white;
+    padding: 2em 0 2em 0;
 }

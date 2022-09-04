@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
-    <link rel="stylesheet" href="style.css">k
+    <title>Treinando HTML e CSS</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>teste</h1>
+   <header class="cabecalho">
+       <div class="container">
+        <!-- 2 class para o menu, colocar no background image url -->
+            <input class="cabecalho-botao" type="checkbox" name="menu" id="menu">
+           <label for="menu"><span class="menu-hamburger imagem"></span></label>
+           
+           <!-- lista do menu -->
+           <ul class="lista-menu">
+            <li class="lista-menu__titulo">DESENVOLVEDOR</li>
+            <li class="lista-menu__item"><a class="lista-menu__link" href="#">FORNT-END</a></li>
+            <li class="lista-menu__item"><a class="lista-menu__link" href="#">FORNT-END</a></li>
+            <li class="lista-menu__item"><a class="lista-menu__link" href="#">FORNT-END</a></li>
+            <li class="lista-menu__item"><a class="lista-menu__link" href="#">FORNT-END</a></li>
+            <li class="lista-menu__item"><a class="lista-menu__link" href="#">FORNT-END</a></li>
+            </ul>
+        </div>
+
+           <div class="container">
+               <h2 class="nome">Helder Ruiz</h2>
+           </div>
+    </header>
+
+    <section class="banner">
+        <h1 class="banner-titulo">Lorem, ipsum dolor sit amet </h1>
+        <p class="banner-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum.</p>
+
+        <input class="pesquisa" type="search" placeholder="Digite Qualquer Coisa Aqui  😁">
+       </section> 
+
+       <div class="video">
+        <iframe width="90%" height="315" src="https://www.youtube.com/embed/W9jthEm-VYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer class="rodape">
+        <h3 class="rodape-titulo">Projeto de Treinamento</h3>
+        <p class="rodape-nome">© Hélder Ruiz Marcelino ✌️</p>
+    </footer>
 </body>
 </html>
